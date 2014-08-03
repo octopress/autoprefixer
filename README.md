@@ -1,4 +1,4 @@
-# Octopress Date Format
+# Octopress Autoprefixer
 
 Automatically adds CSS vendor prefixes to CSS and Sass files in any Jekyll site. This plugin uses the 
 [Autoprefixer-rails](https://github.com/ai/autoprefixer-rails) gem.
