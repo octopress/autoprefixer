@@ -1,0 +1,7 @@
+name: Your New Jekyll Site
+markdown: redcarpet
+timezone: UTC
+gems:
+  - octopress-autoprefixer
+exclude:
+  - Gemfile*
