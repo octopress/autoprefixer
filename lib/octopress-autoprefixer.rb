@@ -20,7 +20,7 @@ module Octopress
 
     def self.process(site)
       find_stylesheets(site.config['destination']).each do |file|
-        #prefix(file)
+        prefix(file)
       end
     end
 
