@@ -1,6 +1,7 @@
 # Octopress Date Format
 
-A simple plugin which makes it easy to have nicely formatted dates on any post or page.
+Automatically adds CSS vendor prefixes to CSS and Sass files in any Jekyll site. This plugin uses the 
+[Autoprefixer-rails](https://github.com/ai/autoprefixer-rails) gem.
 
 [![Build Status](https://travis-ci.org/octopress/autoprefixer.svg)](https://travis-ci.org/octopress/autoprefixer)
 [![Gem Version](http://img.shields.io/gem/v/octopress-autoprefixer.svg)](https://rubygems.org/gems/octopress-autoprefixer)

@@ -1,0 +1,4 @@
+body article {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#eeeeee));
+  background-image: -webkit-linear-gradient(white, #eeeeee);
+  background-image: linear-gradient(white, #eeeeee); }
