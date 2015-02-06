@@ -14,8 +14,8 @@ Gem::Specification.new do |gem|
   gem.license       = "MIT"
 
   gem.add_runtime_dependency 'octopress-hooks', '~> 2.0'
-  gem.add_runtime_dependency "autoprefixer-rails", "~> 2.2"
-  gem.add_runtime_dependency 'jekyll', '~> 2.0'
+  gem.add_runtime_dependency 'autoprefixer-rails', '~> 2.2'
+  gem.add_runtime_dependency 'jekyll', '>= 2.0'
 
   gem.add_development_dependency 'clash', '~> 1.0'
   gem.add_development_dependency 'pry-debugger'
