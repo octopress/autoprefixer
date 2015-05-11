@@ -18,6 +18,7 @@ Gem::Specification.new do |gem|
 
   gem.add_development_dependency 'clash'
   gem.add_development_dependency 'octopress-debugger'
+  gem.add_development_dependency 'rake'
 
   gem.files         = `git ls-files`.split($/)
   gem.require_paths = ["lib"]
