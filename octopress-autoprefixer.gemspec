@@ -13,12 +13,11 @@ Gem::Specification.new do |gem|
   gem.homepage      = "https://github.com/octopress/autoprefixer"
   gem.license       = "MIT"
 
-  gem.add_runtime_dependency 'octopress-hooks', '~> 2.0'
   gem.add_runtime_dependency "autoprefixer-rails", "~> 2.2"
-  gem.add_runtime_dependency 'jekyll', '~> 2.0'
+  gem.add_runtime_dependency 'jekyll', '>= 3.0.0.a', "< 4"
 
-  gem.add_development_dependency 'clash', '~> 1.0'
-  gem.add_development_dependency 'pry-debugger'
+  gem.add_development_dependency 'clash'
+  gem.add_development_dependency 'octopress-debugger'
 
   gem.files         = `git ls-files`.split($/)
   gem.require_paths = ["lib"]
