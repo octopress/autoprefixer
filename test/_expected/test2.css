@@ -1,4 +1,3 @@
 body article {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ccbbaa), to(#aabbcc));
-  background-image: -webkit-linear-gradient(#ccbbaa, #aabbcc);
-  background-image: linear-gradient(#ccbbaa, #aabbcc); }
+  background-image: -webkit-linear-gradient(#cba, #abc);
+  background-image: linear-gradient(#cba, #abc); }

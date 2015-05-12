@@ -1,15 +1,22 @@
-require 'octopress-hooks'
 require 'octopress-autoprefixer/version'
 require 'autoprefixer-rails'
 require 'find'
 
 module Octopress
   module AutoPrefixer
-    class SiteHooks < Hooks::Site
-      @priority = :low
 
-      def post_write(site)
+    if defined?(Jekyll::Hooks)
+      Jekyll::Hooks.register :site, :post_write, priority: :low do |site|
         AutoPrefixer.process(site)
+      end
+    else
+      require 'octopress-hooks'
+      class SiteHooks < Hooks::Site
+        @priority = :low
+
+        def post_write(site)
+          AutoPrefixer.process(site)
+        end
       end
     end
 
