@@ -17,6 +17,8 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency 'jekyll', '>= 2.0'
 
   gem.add_development_dependency 'clash'
+  gem.add_development_dependency 'rake'
+  gem.add_development_dependency 'bundler', "~> 1.7"
 
   gem.files         = `git ls-files`.split($/)
   gem.require_paths = ["lib"]
