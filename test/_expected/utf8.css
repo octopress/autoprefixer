@@ -1,0 +1,6 @@
+@charset "UTF-8";
+h2 {
+  background: -webkit-linear-gradient(#fff, #ccc);
+  background: linear-gradient(#fff, #ccc); }
+  h2:before {
+    content: "§"; }
