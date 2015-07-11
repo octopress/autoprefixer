@@ -12,7 +12,7 @@ module Octopress
     else
       require 'octopress-hooks'
       class SiteHooks < Hooks::Site
-        @priority = :low
+        priority :low
 
         def post_write(site)
           AutoPrefixer.process(site)
