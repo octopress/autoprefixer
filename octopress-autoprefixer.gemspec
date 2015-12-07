@@ -5,6 +5,7 @@ require 'octopress-autoprefixer/version'
 
 Gem::Specification.new do |gem|
   gem.name          = "octopress-autoprefixer"
+  gem.description   = "Autoprefixer for Jekyll based sites"
   gem.version       = Octopress::Autoprefixer::VERSION
   gem.authors       = ["Brandon Mathis"]
   gem.email         = ["brandon@imathis.com"]
@@ -13,7 +14,7 @@ Gem::Specification.new do |gem|
   gem.license       = "MIT"
 
   gem.add_runtime_dependency 'octopress-hooks', '~> 2.0'
-  gem.add_runtime_dependency "autoprefixer-rails", "~> 2.2"
+  gem.add_runtime_dependency 'autoprefixer-rails'
   gem.add_runtime_dependency 'jekyll', '>= 2.0'
 
   gem.add_development_dependency 'clash'
