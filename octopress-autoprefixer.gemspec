@@ -12,9 +12,8 @@ Gem::Specification.new do |gem|
   gem.homepage      = "https://github.com/octopress/autoprefixer"
   gem.license       = "MIT"
 
-  gem.add_runtime_dependency 'octopress-hooks', '~> 2.0'
   gem.add_runtime_dependency "autoprefixer-rails"
-  gem.add_runtime_dependency 'jekyll', '>= 2.0'
+  gem.add_runtime_dependency 'jekyll', '~> 3.0'
 
   gem.add_development_dependency 'clash'
   gem.add_development_dependency 'rake'

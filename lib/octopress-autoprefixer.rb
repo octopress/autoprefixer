@@ -5,19 +5,8 @@ require 'find'
 module Octopress
   module AutoPrefixer
 
-    if defined?(Jekyll::Hooks)
-      Jekyll::Hooks.register :site, :post_write, priority: :low do |site|
-        AutoPrefixer.process(site)
-      end
-    else
-      require 'octopress-hooks'
-      class SiteHooks < Hooks::Site
-        priority :low
-
-        def post_write(site)
-          AutoPrefixer.process(site)
-        end
-      end
+    Jekyll::Hooks.register :site, :post_write, priority: :low do |site|
+      AutoPrefixer.process(site)
     end
 
     def self.find_stylesheets(dir)
