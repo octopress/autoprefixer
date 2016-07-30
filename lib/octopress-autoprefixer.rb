@@ -22,8 +22,9 @@ module Octopress
 
     def self.prefix(stylesheet)
       content = File.open(stylesheet).read
+      prefixed_content = AutoprefixerRails.process(content)
       File.open(stylesheet, 'w') do |f|
-        f.write(AutoprefixerRails.process(content))
+        f.write(prefixed_content)
       end
     end
   end
