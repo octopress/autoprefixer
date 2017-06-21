@@ -1,3 +1,6 @@
 body {
   box-shadow: #ec0 0px 0px 3px inset;
 }
+div {
+  display: flex;
+}

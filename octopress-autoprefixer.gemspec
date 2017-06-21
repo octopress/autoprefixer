@@ -16,7 +16,7 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency 'autoprefixer-rails'
   gem.add_runtime_dependency 'jekyll', '~> 3.0'
 
-  gem.add_development_dependency 'clash'
+  gem.add_development_dependency 'clash', '~> 2.0'
   gem.add_development_dependency 'rake'
   gem.add_development_dependency 'bundler', '~> 1.7'
 

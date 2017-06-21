@@ -1,7 +1,12 @@
 name: Your New Jekyll Site
 markdown: redcarpet
 timezone: UTC
-gems:
+plugins:
   - octopress-autoprefixer
 exclude:
   - Gemfile*
+autoprefixer:
+  flexbox: no-2009
+  remove: false
+  browsers:
+    - "last 2 versions"

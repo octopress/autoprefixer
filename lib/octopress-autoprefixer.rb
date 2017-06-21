@@ -16,14 +16,14 @@ module Octopress
 
     def self.process(site)
       find_stylesheets(site.config['destination']).each do |file|
-        prefix(file)
+        prefix(file, site.config['autoprefixer'] || {})
       end
     end
 
-    def self.prefix(stylesheet)
+    def self.prefix(stylesheet, options)
       content = File.open(stylesheet).read
       File.open(stylesheet, 'w') do |f|
-        f.write(AutoprefixerRails.process(content))
+        f.write(AutoprefixerRails.process(content, options))
       end
     end
   end
