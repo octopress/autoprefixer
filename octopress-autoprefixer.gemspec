@@ -14,7 +14,7 @@ Gem::Specification.new do |gem|
   gem.license       = 'MIT'
 
   gem.add_runtime_dependency 'autoprefixer-rails'
-  gem.add_runtime_dependency 'jekyll', '~> 3.0'
+  gem.add_runtime_dependency 'jekyll', '~> 4.0'
 
   gem.add_development_dependency 'clash', '~> 2.0'
   gem.add_development_dependency 'rake'
